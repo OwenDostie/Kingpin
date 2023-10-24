@@ -11,3 +11,21 @@ Can you pin the king?
 ### GUI
 
 * [Foley's GUI Magic](https://github.com/ffAudio/foleys_gui_magic) - [demo](https://www.youtube.com/watch?v=aphA_OTmbFE)
+
+### CMake
+
+Setting up CMake in root directory
+`cmake -S . -B build`
+
+Setting up Juce via CMake (in plugin directory)
+`cmake -S . -B build`
+
+Build plugin (in plugin directory)
+`cmake --build build`
+
+* [Pamplejuce](https://github.com/sudara/pamplejuce)
+
+
+#### Todo
+
+* Make automatic build process in vscode

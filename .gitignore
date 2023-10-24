@@ -1,4 +1,12 @@
-Builds
-JuceLibraryCode
+# Exclude Juce specific stuff
+Builds/
+JuceLibraryCode/
+
+# Exclude cmake specific stuff
+build/
+libs/
+
+# Exclude directory and workspace configurations
 .DS_Store
 .vscode
+
