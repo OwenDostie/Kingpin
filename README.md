@@ -2,6 +2,15 @@
 
 Can you pin the king?
 
+## Todo
+
+### Owen
+
+* Automated build + run script
+* Drag & drop files (work off example)
+* Create console section in plugin window w/ copy paste functionality
+* Create magic UI
+
 ## Notes
 
 * https://docs.juce.com/master/
@@ -14,18 +23,13 @@ Can you pin the king?
 
 ### CMake
 
-Setting up CMake in root directory
-`cmake -S . -B build`
+Initial config:
+* Install CMake, make sure to add to path
+* Run VS Code as admin, otherwise it won't be able to copy plugin to vst folder
+* Go to root/libs/cmake and run `cmake -S . -B build`. You should only have to do this once.
 
-Setting up Juce via CMake (in plugin directory)
-`cmake -S . -B build`
-
-Build plugin (in plugin directory)
-`cmake --build build`
-
-* [Pamplejuce](https://github.com/sudara/pamplejuce)
-
-
-#### Todo
-
-* Make automatic build process in vscode
+To build and test plugin, run this from the plugin directory:
+```
+cmake --build build
+start ../ableton/Kingpin.als
+```

@@ -1,12 +1,10 @@
 # Exclude Juce specific stuff
-Builds/
-JuceLibraryCode/
+plugin/build/
 
 # Exclude cmake specific stuff
-build/
-libs/
+libs/cmake/build/
+libs/juce/
 
 # Exclude directory and workspace configurations
 .DS_Store
 .vscode
-
