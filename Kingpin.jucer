@@ -2,9 +2,11 @@
 
 <JUCERPROJECT id="CmptIV" name="Kingpin" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
-              pluginFormats="buildAU,buildStandalone,buildVST3">
+              pluginFormats="buildAU,buildStandalone,buildVST3" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn">
   <MAINGROUP id="REy2Jr" name="Kingpin">
     <GROUP id="{814DDD56-1B24-C42E-2510-FE001E53A078}" name="Source">
+      <FILE id="u9KhJN" name="PitchMap.cpp" compile="1" resource="0" file="Source/PitchMap.cpp"/>
+      <FILE id="eTMKtU" name="PitchMap.h" compile="0" resource="0" file="Source/PitchMap.h"/>
       <FILE id="CTuPwA" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="yt0dc2" name="PluginProcessor.h" compile="0" resource="0"
