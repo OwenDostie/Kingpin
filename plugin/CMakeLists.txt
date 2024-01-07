@@ -15,10 +15,12 @@ juce_add_plugin(${PROJECT_NAME}
     IS_MIDI_EFFECT FALSE
     NEEDS_MIDI_INPUT TRUE
     NEEDS_MIDI_OUTPUT FALSE
-    EDITOR_WANTS_KEYBOARD_FOCUS
+    EDITOR_WANTS_KEYBOARD_FOCUS TRUE
 
     COPY_PLUGIN_AFTER_BUILD TRUE
 )
+
+juce_generate_juce_header(${PROJECT_NAME})
 
 target_sources(${PROJECT_NAME}
     PRIVATE
@@ -30,6 +32,8 @@ target_include_directories(${PROJECT_NAME}
     PRIVATE
         include
 )
+
+message(STATUS "Include paths: ${CMAKE_INCLUDE_PATH}")
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
