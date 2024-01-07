@@ -8,6 +8,11 @@ class KingpinAudioProcessor final : public juce::AudioProcessor
 {
 public:
     //==============================================================================
+    
+    std::string debugString = "Test";
+
+    
+    //==============================================================================
     KingpinAudioProcessor();
     ~KingpinAudioProcessor() override;
 

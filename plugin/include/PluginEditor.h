@@ -7,6 +7,12 @@
 class KingpinAudioProcessorEditor final : public juce::AudioProcessorEditor
 {
 public:
+    
+    std::string debugString = "Test";
+    
+    void openButtonClicked();
+    //==============================================================================
+
     explicit KingpinAudioProcessorEditor (KingpinAudioProcessor&);
     ~KingpinAudioProcessorEditor() override;
 
